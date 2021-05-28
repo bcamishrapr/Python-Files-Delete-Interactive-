@@ -1,3 +1,4 @@
+#AUTHOR: PRASOON MISHRA
 import os
 from tkinter import *
 import time
@@ -22,7 +23,7 @@ def remove_files(dir_path, n):
         if os.stat(file_path).st_mtime < now - n_days:
             os.remove(file_path)
             print("Deleted ", f)
-
+#Defining Function for copying files
 def copy_files(dir_path, n, target):
     
     all_files = os.listdir(dir_path)
